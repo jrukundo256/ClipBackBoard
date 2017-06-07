@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ClipBackBoard</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/popup.css">
+
+<script src="js/plugins/jquery-2.0.3.min.js"></script>
+<script src="js/plugins/bootstrap.min.js"></script>
+<script src="js/plugins/moment.min.js"></script>
+<script src="js/popup.js"></script>
+
+</head>
+<body>
+	<div id="wrap">
+
+        <div class="btn-group btn-group-xs pull-right" id="tools">
+            <div class="btn btn-default" id="clear">
+                <span class="fa fa-times"></span> Clear all
+            </div>
+
+            <div class="btn btn-default" id="refresh">
+                <span class="fa fa-refresh"></span> Refresh
+            </div>
+        </div>
+
+        <div class="pull-left header-text"><strong>CLIP'BACK'BOARD</strong></div>
+        <table id="history-table" class="table table-condensed">
+        </table>
+
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Show full text" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                        <div class="btn-group btn-group-sm pull-right" id="modal-tools">
+                            <div class="btn btn-default" id="modal-copy">Copy</div>
+                            <div class="btn btn-default" id="modal-delete">Delete</div>
+                        </div>
+
+
+                        <h5 class="modal-title"></h5>
+                        <small class="full-lenght text-muted">Character length: <span></span></small>
+                    </div>
+
+                    <div class="modal-body">
+                        <pre class="full-text">
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<hr />
+		<p style="font-size: 0.8em;" class="text-center"><span class="fa fa-user"></span> RUKUNDO JONATHAN</p>
+    </div>
+</body>
+</html>
