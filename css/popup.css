@@ -1,0 +1,84 @@
+body {
+    transition: height 0.4s ease-out;
+}
+.body-ext {
+    height: 300px;
+}
+#wrap {
+	width:600px;
+    max-height:500px;
+    overflow-y: scroll;
+    padding: 5px;
+    transition: height 0.3s linear;
+}
+#history-table {
+	margin-bottom:0;
+}
+#history-table td {
+    padding: 3px 1px;
+    cursor: pointer;
+    font-size: 12px;
+}
+td.paste-text div {
+    height: 15px;
+    overflow: hidden;
+    padding-left: 5px;
+    max-width: 388px;
+    text-overflow: ellipsis;
+}
+td.time-ago {
+    width: 90px;
+}
+td.time-ago .label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: .4em .6em .5em;
+    font-size: 10px;
+}
+td.count {
+    width: 30px;
+}
+td.show-text, td.delete-text {
+    width: 32px;
+}
+tr.current td.delete-text button {
+    display: none;
+}
+#tools {
+    padding: 5px;
+    margin-right: 7px;
+}
+.header-text {
+    margin: 6px 0 0 2px;
+}
+/* Bootstrap fixes */
+body.modal-open {
+    margin-right: 0 !important;
+}
+.modal {
+    overflow-y: auto;
+}
+/* / */
+td.show-text button, td.delete-text button {
+    padding: 0 7px;
+    font-size: 11px;
+}
+.modal-body, .modal-header {
+    padding: 10px;
+}
+.full-text {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+#tools.btn-group>.btn {
+    padding: 0 15px;
+    font-size: 14px;
+}
+#modal-tools {
+    margin-right: 25px;
+}
+#modal-copy {
+    padding-left: 15px;
+    padding-right: 15px;
+}
